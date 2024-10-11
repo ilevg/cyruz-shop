@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../asset/fonts/SFProDisplay-Medium.eot') format('embedded-opentype'),
+        url('../asset/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../asset/fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../asset/fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-color: black;
+    color: white;
+}
+*{
+    font-family: 'SF Pro Display';
+}
+
+
+/* Style for intro__section */
+.intro__section{
+    font-family: 'SF Pro Display';
+    background-image: url(/asset/img/intro_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    transition: opacity 1s ease;
+}
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5rem 20px 10rem 20px;
+}
+.intro__header{
+    font-size: 90px;
+    max-width: 600px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 150px auto 30px auto;
+}
+.intro__button{
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 3px rgb(254, 220, 1) solid;
+    color: rgb(254, 220, 1);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.intro__button:hover{
+    color: black;
+    background-color: rgb(254, 220, 1);;
+    transition: background-color 0.5s ease;
+}
+
+
+/* style for katalog__section */
+.katalog__section{
+    font-family: 'SF Pro Display';
+    background-color: rgb(31, 29, 29);
+    height: 800px;
+    transition: opacity 1s ease;
+}
+.katalog__header{
+    font-size: 40px;
+    padding-top: 100px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+/* style for shopnow__section */
+.shopnow__section{
+    transition: opacity 1s ease;
+}
+.shopnow__content{
+    margin: 0 50px 75px 50px;
+    font-family: 'SF Pro Display';
+}
+.shopnow__header{
+    font-size: 70px;
+    margin: 50px auto 100px auto;
+    text-align: center;
+    max-width: 900px;
+}
+.shopnow__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.shopnow__item{
+    text-align: right;
+    margin-top: 200px;
+    width: 50%;
+}
+.shopnow__header_second{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.shopnow__paragraph{
+    color:rgb(183, 183, 183);
+}
+.shopnow__button{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px rgb(254, 220, 1) solid;
+    color: rgb(254, 220, 1);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.shopnow__button:hover{
+    color: black;
+    background-color: rgb(254, 220, 1);
+    transition: background-color 0.5s ease;
+}
+.shopnow__img_container{
+    width: 50%;
+    height: auto;
+}
+.shopnow__img{
+    width: 100%;
+    height: auto;
+}
+
+/* style for services__section */
+
+.services__section{
+    font-family: 'SF Pro Display';
+    padding: 0 50px;
+    background-color: rgb(0, 0, 0);
+    transition: opacity 1s ease;
+}
+.services__container{
+    position: relative;
+}
+.services__img_first{
+    width: 100%;
+    height: auto;
+    margin: 75px 0 100px 0; 
+}
+
+.services__header{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(254, 220, 1);
+    text-shadow: 2px 2px 4px black;
+}
+.services__paragraph{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    font-size: 24px;
+}
+.services__content{
+    display: flex;
+    justify-content: space-around;
+}
+.services__items{
+    display: flex;
+    margin-right: 20px;
+}
+.services__items:last-child{
+    margin-right: 0;
+}
+.services__items:last-child{
+    margin-right: 0;
+}
+.services__img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.services__headers_second{
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: rgb(254, 220, 1);
+}
+.services__item p{
+    color:rgb(183, 183, 183);
+    font-size: 18px;
+    margin-bottom: 75px;
+}
+
+/* style for kontakt__section */
+
+/* responsive */
+
+
+@media screen and (max-width: 1200px){
+    .intro__header{
+        font-size: 60px;
+        margin-top: 90px;
+
+    }
+    .shopnow__header{
+        font-size: 40px;
+    }
+    .shopnow__header_second{
+        font-size: 35px;
+    }
+    .shopnow__button{
+        height: 35px;
+        width: 150px;
+    }
+    .services__header{
+        font-size: 35px;
+    }
+    .intro__content{
+        padding:15em 0;
+    }
+}
+@media screen and (max-width: 998px){
+    .services__headers_second{
+        font-size: 18px;
+    }
+    .services__item p{
+        font-size: 14px;
+    }
+    .shopnow__item{
+        margin-top: 0px;
+    }
+    .shopnow__items{
+        gap: 75px
+    }
+}
+@media screen and (max-width: 768px){
+    .intro__section{
+        background-size: cover;
+
+    }
+    .intro__header{
+        font-size: 35px;
+        padding: 0;
+        text-align: center;
+        width: auto;
+    }
+    .shopnow__content{
+        margin: 0 20px 75px 20px;
+    }
+    .shopnow__header{
+        font-size: 35px;
+        margin: 50px auto 30px auto;
+    }
+    .shopnow__header_second{
+        font-size: 26px;
+    }
+    .shopnow__items{
+        display: block;
+    }
+    .shopnow__item{
+        width: 100%;
+        text-align: center;
+    }
+    .shopnow__img_container{
+        width: 100%;
+    }
+    .shopnow__button{
+        margin-bottom: 30px;
+    }.services__section{
+        padding: 0 20px;
+    }
+    .services__items_last{
+        display: none;
+    }
+    .services__img_first{
+        margin: 0 auto 50px auto;
+    }
+    .services__header{
+        top: 30%;
+    }
+    .services__paragraph{
+        top: 25%;
+    }
+}
+@media screen and (max-width: 568px){
+    .intro__header{
+        font-size: 30px;
+    }
+    .intro__button{
+        font-size: 14px;
+        width: 200px;
+    }
+    .shopnow__paragraph{
+        font-size: 14px;
+    }
+    .services__header{
+        top: 15%;
+        font-size: 22px;
+    }
+    .services__paragraph{
+        top: 5%;
+        font-size: 16px;
+    }
+}

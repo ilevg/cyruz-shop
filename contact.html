@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sprzedaz bluz">
+    <title>Contact - CYRUZ SHOP</title>
+    <link rel="icon" typ="image/x-icon" href="asset/img/favicon.png">
+    <link rel="stylesheet" href="/asset/contact.css">
+    <link rel="stylesheet" href="/asset/reset.css">
+    <link rel="stylesheet" href="/asset/header.css">
+
+</head>
+<body>
+    <div w3-include-html="header.html"></div> 
+    <!-- kontakt__section start -->
+    <section class="contact__section">
+        <div class="contact__text">
+            <h2 class="contact__header">KONTAKT</h2>
+            <div class="contact__text_nav">
+                <a href="#">Glowna</a>
+                <span>/ Kontakt</span>
+            </div>
+        </div>
+        <div class="contact__links">
+            <div class="contact__link">
+                <img src="/asset/img/contact-phone-img.png" alt="phone" class="contact__icon">
+                <h2 class="contact__header_sec">TELEFON</h2>
+                <p class="contact__paragraph">+48 555 555 555</p>
+            </div>
+
+            <div class="contact__link">
+                <img src="/asset/img/contact-email-img.png" alt="email" class="contact__icon">
+                <h2 class="contact__header_sec">EMAIL</h2>
+                <p class="contact__paragraph">mail@example.com</p>
+            </div>
+
+            <div class="contact__link">
+                <img src="/asset/img/contact-adress-img.png" alt="addres" class="contact__icon">
+                <h2 class="contact__header_sec">ADRES</h2>
+                <p class="contact__paragraph">No: 58 A, East Madison Street,</p>
+            </div>
+        </div>
+
+        <form class="contact__form">
+            <span class="contact__form_header">Formularz Kontaktowy</span>
+            
+            <label for="name"></label>
+            <input type="text" id="name" name="name" value placeholder="Imie" required>
+        
+
+        
+            <label for="email"></label>
+            <input type="email" id="email" name="email" value placeholder="Email" required>
+        
+
+        
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phone" value placeholder="Numer telofonu" required>
+
+            <textarea name="textarea" id="textarea" value placeholder="Comment"></textarea>
+
+            <button type="submit">Wyslac</button>
+        </form>
+    </section>
+    <!-- kontakt__section end -->
+    <div w3-include-html="footer.html"></div> 
+    <script src="/script.js"></script>
+    <script>includeHTML(burgerFunc);</script>
+</body>
+</html>

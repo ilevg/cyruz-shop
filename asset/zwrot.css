@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../asset/fonts/SFProDisplay-Medium.eot') format('embedded-opentype'),
+        url('../asset/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../asset/fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../asset/fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    font-family: 'SF Pro Display';
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.zwrot__header{
+    font-family: 'SF Pro Display';
+    font-size: 50px;
+    color: white;
+    width: max-content;
+    padding-top: 150px;
+    margin: 0 auto 30px auto;
+}
+.zwrot__text_nav{
+    font-family: 'SF Pro Display';
+    font-size: 24px;
+    color: rgb(183, 183, 183);
+    width: max-content;
+    margin: 0 auto 50px auto;
+}
+.zwrot__text_nav a{
+    font-family: 'SF Pro Display';
+    color: white;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .5s ease;
+}
+.zwrot__text_nav a:hover{
+    text-decoration-color: rgb(254, 220, 1);
+}
+.zwrot__paragraph_adress{
+    font-family: 'SF Pro Display';
+    color: rgb(183, 183, 183);
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.zwrot__content{
+    font-family: 'SF Pro Display';
+    color: white;
+    margin: 0 50px;
+    font-size: 24px;
+}
+.zwrot__paragraph{
+    margin-bottom: 50px;
+}
+.zwrot__list{
+    list-style:decimal;
+    margin-left: 80px;
+    color: rgb(183, 183, 183);
+}
+.zwrot__formularz_img{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+.zwrot__paragraph_second{
+    margin-bottom: 50px;
+    color: rgb(183, 183, 183);
+}
+.zwrot__paragraph_second a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 568px) {
+    .zwrot__content{
+        margin: 0 20px 0 20px;
+    }
+    .zwrot__header{
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .zwrot__paragraph_adress{
+        font-size: 16px;
+    }
+    .zwrot__list{
+        font-size: 14px;
+    }
+    .zwrot__paragraph{
+        margin-bottom: 20px;
+    }
+}
+

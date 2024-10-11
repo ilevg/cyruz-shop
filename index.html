@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sprzedaz bluz">
+    <title>CYRUZ SHOP</title>
+    <link rel="icon" typ="image/x-icon" href="asset/img/favicon.png">
+    <link rel="stylesheet" href="/asset/style.css">
+    <link rel="stylesheet" href="/asset/header.css">
+    <link rel="stylesheet" href="/asset/reset.css">
+</head>
+<body>
+    <div w3-include-html="header.html"></div> 
+
+    <div class="wrapper">
+        <!-- intro__section start -->
+        <section class="intro__section" data-opacity="intro">
+            <div class="intro__content">
+                <h1 class="intro__header">ekskluzywne bluzy</h1>
+                <button class="intro__button" type="button">Przeglądaj produkty</button>
+            </div >
+        </section>
+        <!-- intro__section end -->
+
+        <!-- katalog__section start -->
+        <section class="katalog__section" data-opacity="katalog">
+            <h2 class="katalog__header">KATALOG</h2>
+            
+        </section>
+        <!-- katalog__section end -->
+
+
+        <!-- shopnow__section start -->
+        <section class="shopnow__section" data-opacity="shopnow">
+            <div class="shopnow__content">
+                <h1 class="shopnow__header">KOMFORT  W KAŻDEJ CHWILI</h1>
+                <div class="shopnow__items">
+                    <div class="shopnow__item">
+                        <h2 class="shopnow__header_second">PREMIUM FABRIC</h2>
+                        <p class="shopnow__paragraph">Viverra accumsan in nisl nisi scelerisque eu.</p>
+                        <p class="shopnow__paragraph">Risus feugiat in ante metus dictum at tempor commodo ullamcorper.</p>
+                        <button class="shopnow__button">Kup Teraz</button>
+                    </div>
+                    <div class="shopnow__img_container">
+                        <img src="/asset/img/shopnow__img.png" alt="bluza" class="shopnow__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shopnow__section end -->
+
+        <!-- services__section start -->
+        <section class="services__section" data-opacity="services">
+            <div class="services__container">
+                <img src="/asset/img/services__img.webp" alt="bluza" class="services__img_first">
+                <h2 class="services__header">PROSTY ALE ELEGANCKI</h2>
+                <p class="services__paragraph">ULTIMATE COMFORT AND STYLE</p>
+            </div>
+            <div class="services__content">
+                <div class="services__items">
+                    <img class="services__img" src="/asset/img/img_services_arrow.png" alt="wzwrot">
+                    <div class="services__item">
+                        <h2 class="services__headers_second" >WZWROT</h2>
+                        <p>Bezpłatny zwrot w ciągu 14 dni</p>
+                    </div>
+                    
+                </div>
+                <div class="services__items">
+                    <img class="services__img" src="/asset/img/img_services_chek.png" alt="gwarancja">
+                    <div class="services__item">
+                        <h2 class="services__headers_second" >GWARANCJA</h2>
+                        <p>1 rok gwarancji na kolor i materiał</p>
+                    </div>
+                    
+                </div>
+                <div class="services__items services__items_last">
+                    <img class="services__img" src="/asset/img/img_services_box.png" alt="dostawa">
+                    <div class="services__item">
+                        <h2 class="services__headers_second" >DOSTAWA</h2>
+                        <p>Free delivery for all products on order above $100</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- services__section end -->
+    </div>
+    <div w3-include-html="footer.html"></div> 
+
+    <script src="/script.js"></script>
+    <script>  
+        includeHTML(burgerFunc);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../asset/fonts/SFProDisplay-Medium.eot') format('embedded-opentype'),
+        url('../asset/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../asset/fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../asset/fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    font-family: 'SF Pro Display';
+}
+body{
+    background-color: black;
+    font-family: 'SF Pro Display';
+    color: white;
+}
+.platnosci__header{
+    font-family: 'SF Pro Display';
+    font-size: 50px;
+    color: white;
+    padding-top: 150px;
+    width: max-content;
+    margin: 0 auto 30px auto;
+}
+.platnosci__text_nav{
+    font-family: 'SF Pro Display';
+    font-size: 24px;
+    color: rgb(183, 183, 183);
+    width: max-content;
+    margin: 0 auto 50px auto;
+}
+.platnosci__text_nav a{
+    color: white;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .5s ease;
+}
+.platnosci__text_nav a:hover{
+    text-decoration-color: rgb(254, 220, 1);
+}
+.platnosci__content{
+    font-family: 'SF Pro Display';
+    margin: 0 50px;
+}
+.platnosci__paragraph_first{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.platnosci__img{
+    width: 100%;
+    height: auto;
+}
+.platnosci__paragraph_second{
+    font-size: 24px;
+    color: rgb(183, 183, 183);
+    margin: 20px 0 40px 0;
+}
+.platnosci__paragraphs{
+    font-size: 24px;
+    color: rgb(183, 183, 183);
+    margin-bottom: 50px;
+}
+.platnosci__paragraphs:last-child{
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 568px) {
+    .platnosci__header{
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .regulamin__text_nav{
+        margin-bottom: 0px;
+    }
+    .platnosci__content{
+        margin: 0 20px 0 20px;
+        
+    }
+    .platnosci__paragraphs{
+        font-size: 14px;
+    }
+    .platnosci__paragraphs:last-child{
+        margin-bottom: 50px;
+    }
+}

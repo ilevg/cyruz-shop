@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../asset/fonts/SFProDisplay-Medium.eot') format('embedded-opentype'),
+        url('../asset/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../asset/fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../asset/fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    font-family: 'SF Pro Display';
+}
+body{
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+.dostawa__text_nav{
+    font-family: 'SF Pro Display';
+    font-size: 24px;
+    color: rgb(183, 183, 183);
+    margin: 30px auto 70px auto;
+    width: max-content;
+}
+.dostawa__text_nav a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: border-color .5s ease;
+}
+.dostawa__text_nav a:hover{
+    border-color: rgb(254, 220, 1);
+}
+.dostawa__header{
+    font-family: 'SF Pro Display';
+    color: white;
+    font-size: 50px;
+    padding-top: 130px;
+    margin: 0 auto 0 auto;
+    width:max-content;
+}
+.dostawa__paczko_img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 80px;
+}
+.dostawa__kurier_img{
+    width: 170px;
+    height: auto;
+    margin-bottom: 80px;
+}
+.dostawa__content{
+    font-family: 'SF Pro Display';
+    margin: 0 50px 150px 50px;
+}
+.dostawa__paragraph_first{
+    color: rgb(183, 183, 183);
+    font-size: 24px;
+}
+.dostawa__paragraph_second{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 568px) {
+    .dostawa__content{
+        margin: 50px 20px 50px 20px;
+    }
+    .dostawa__header{
+        font-size: 40px;
+        padding-top: 80px;
+    }
+    .dostawa__paczko_img{
+        width: 180px;
+        margin-bottom: 30px;
+    }
+    .dostawa__kurier_img{
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    .dostawa__text_nav{
+        margin: 15px auto 40px auto;
+    }
+    .dostawa__paragraph_first, .dostawa__paragraph_second{
+        font-size: 14px;
+    }
+}
